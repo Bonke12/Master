@@ -3,9 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App'
 import './index.css'
 
-import Home from './Pages/Home'
-import AboutUS from './Pages/AboutUS'
-import Contacts from './Pages/Contacts'
+
 
 import {
   createBrowserRouter,
