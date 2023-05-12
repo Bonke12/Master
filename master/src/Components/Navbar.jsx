@@ -14,8 +14,8 @@ function Header() {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link href="">Home</Nav.Link>
-                            <Nav.Link href="https://unsplash-video-ads.imgix.video/GSWRK_CAN_Acquire_Custom_Urgency_EDN1VIDOWL_SignUp_1x1%20(1).mp4?fm=mp4&res=medium">About</Nav.Link>
-                            <Nav.Link href="https://getbootstrap.com/docs/5.2/examples/sign-in/">Login</Nav.Link>
+                            <Nav.Link href= "#">About</Nav.Link>
+                            <Nav.Link href="#">Login</Nav.Link>
                         </Nav>
                         <br></br>
                         <i class="bi bi-cart3"></i>
