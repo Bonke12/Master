@@ -1,36 +1,41 @@
-import React from 'react'
+import Carousel from 'react-bootstrap/Carousel';
 
-const Slide = () => {
+function IndividualIntervalsExample() {
     return (
-        <div>
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="..." alt="First slide"/>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="..." alt="Second slide"/>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" src="..." alt="Third slide"/>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    )
+        <Carousel>
+            <Carousel.Item interval={1000}>
+                <img
+                    className="d-block w-100"
+                    src="http://t3.gstatic.com/licensed-image?q=tbn:ANd9GcSRTbtzf1Mp52cmK2-fUMECKB-XiYhEpm3cPpqskbz2YjC8mt6h8H93LFTaRb5ZiX4ZN6hM8bVH3_HtGeb4dqw"
+                    alt="First slide"
+                />
+                <Carousel.Caption>
+                    <h3>Products to sell</h3>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item interval={500}>
+                <img
+                    className="d-block w-100"
+                    src="http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcS4dCsehCCr-AiySEOyfCS0OlScdF-GwjzdQ_pUj5RUMPJKPJrhYP1FYivx51DqXg7s3zyUvH4UcvWKRl0eGmQ"
+                    alt="Second slide"
+                />
+                <Carousel.Caption>
+                    <h3>Buy online things</h3>
+                </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+                <img
+                    className="d-block w-100"
+                    src="https://images.business.com/app/uploads/2022/03/23032729/shopper_Prostock-Studio_getty-3.jpg"
+                    alt="Third slide"
+                />
+                <Carousel.Caption>
+                    <h3>Take your products to send home</h3>
+
+                </Carousel.Caption>
+            </Carousel.Item>
+        </Carousel>
+    );
 }
 
-export default Slide
+export default IndividualIntervalsExample;
