@@ -4,8 +4,8 @@ import App from './App'
 import './index.css'
 
 import Home from './Pages/Home'
-import Contacts from './Pages/ContactUS'
-import AboutUS from './Pages/AboutUS'
+import About from './Pages/About'
+import Contacts from './Pages/Contacts'
 
 import {
   createBrowserRouter,
@@ -18,18 +18,17 @@ const router = createBrowserRouter([
     element: <Home/>,
   },
   {
-    path: "/aboutus",
-    element: <AboutUS/>,
+    path: "/about",
+    element: <About/>,
   },
   {
     path: "/contacts",
     element: <Contacts/>,
   },
-  
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )
